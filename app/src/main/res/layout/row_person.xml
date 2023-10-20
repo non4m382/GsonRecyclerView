@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView2"-->
+        <!--            android:layout_width="66dp"-->
+        <!--            android:layout_height="63dp"-->
+        <!--            app:srcCompat="@drawable/android_image_2"-->
+        <!--            tools:layout_editor_absoluteX="24dp"-->
+        <!--            tools:layout_editor_absoluteY="91dp" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView3"-->
+        <!--            android:layout_width="69dp"-->
+        <!--            android:layout_height="55dp"-->
+        <!--            app:srcCompat="@drawable/android_image_3"-->
+        <!--            tools:layout_editor_absoluteX="24dp"-->
+        <!--            tools:layout_editor_absoluteY="165dp" />-->
+
+        <ImageView
+            android:id="@+id/imv_ava"
+            android:layout_width="112dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="firstname"
+            app:layout_constraintBottom_toTopOf="@+id/tv_lastName"
+            app:layout_constraintStart_toStartOf="@+id/tv_lastName"
+            app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+        <TextView
+            android:id="@+id/tv_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last_name"
+            app:layout_constraintBottom_toTopOf="@+id/tv_email"
+            app:layout_constraintStart_toStartOf="@+id/tv_email"
+            app:layout_constraintTop_toBottomOf="@+id/tv_firstName" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="248dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:text="email"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imv_ava"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lastName" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/tv_firstName"
+            app:layout_constraintStart_toStartOf="@+id/tv_firstName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
